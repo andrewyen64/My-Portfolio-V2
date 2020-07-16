@@ -3,17 +3,20 @@
 }
 
 body {
-    background-color: rgb(221, 221, 221);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background-color: rgb(237, 237, 237);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 200px;
 }
 
-.container {
+.container,
+main {
     max-width: 980px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .header {
     border-bottom: solid silver;
+    max-width: auto;
 }
 
 .name {
@@ -26,14 +29,14 @@ body {
 }
 
 main {
-    padding-left: 4%;
+    padding: 2% 0 0 6%;
 }
 
 main h2 {
     padding-bottom: 20px;
     color: rgb(60, 181, 211);
     font-size: 30px;
-    line-height: 49px;
+    font-weight: bolder;
 }
 
 #about-image {
@@ -49,37 +52,51 @@ p {
 }
 
 footer {
-    margin-top: 40%;
-    max-width: 980px;
+    max-width: 0 auto;
     padding: 30px;
-    font-size: 12px;
+    clear: both;
+    font-size: 14px;
     text-align: center;
     background: #666;
     border-top: 8px solid #4aaaa5;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: relative;
     color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
     .container,
-    .header,
-    footer {
-        max-width: 740px;
+    main {
+        max-width: 768px;
+    }
+
+    #about-image {
+        width: 250px;
+        height: 320px;
+    }
+
+    p {
+        font-size: 19px;
+        margin: 0 25px 0 5px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .container,
-    .header,
-    footer {
-        max-width: 630px;
+    main {
+        max-width: 640px;
+    }
+
+    #about-image {
+        clear: both;
     }
 
     p {
         font-size: 16px;
+        margin: 0 25px 0 5px;
     }
 
 }
