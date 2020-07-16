@@ -67,7 +67,7 @@ footer {
 @media screen and (max-width: 768px) {
     .container,
     main {
-        max-width: 740px;
+        max-width: 768px;
     }
 }
 
