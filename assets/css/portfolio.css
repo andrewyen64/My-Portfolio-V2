@@ -3,13 +3,15 @@
 }
 
 body {
-    background-color: rgb(221, 221, 221);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    background-color: rgb(237, 237, 237);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 200px;
 }
 
-.container {
+.container,
+main {
     max-width: 980px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .header {
@@ -26,68 +28,56 @@ body {
 }
 
 main {
-    padding-left: 4%;
-    max-width: 900px;
+    padding: 2% 3.5%;
 }
 
 .projects {
     width: auto fill; 
-    height: 300px;
+    height: 280px;
     border-bottom: 1px solid grey;
 }
 
-/* .projects a {
-    color: white;
-} */
+.card-title {
+    text-decoration: underline;
+}
 
-/* .projects a:visited {
-    color: yellow;
+a:link {
+    color: teal;
+}
+
+a:visited {
+color: rgb(0, 184, 184);
+}
+
+a:hover {
+color: teal;
+}
+
+/* selected link */
+/* a:active {
+color: yellow;
 } */
 
 footer {
-    margin-top: 40%;
-    max-width: 980px;
+    max-width: 0 auto;
     padding: 30px;
-    padding-top: 20px;
     clear: both;
     font-size: 14px;
     text-align: center;
     background: #666;
     border-top: 8px solid #4aaaa5;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: relative;
     color: white;
-}
-
-@media screen and (max-width: 920px) {
-    .container,
-    .header,
-    footer {
-        max-width: 874px;
-    }
-
-    main {
-        max-width: 750px;
-    }
-    
-    .projects {
-        width: auto fill; 
-        height: 250px;
-        border-bottom: 1px solid grey;
-    }
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
     .container,
-    .header,
-    footer {
-        max-width: 740px;
-    }
-
     main {
-        max-width: 730px;
+        max-width: 740px;
     }
 
     .projects {
@@ -99,8 +89,7 @@ footer {
 
 @media screen and (max-width: 640px) {
     .container,
-    .header,
-    footer {
+    main {
         max-width: 640px;
     }
     
