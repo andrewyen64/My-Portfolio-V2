@@ -3,14 +3,14 @@
 }
 
 body {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(214, 242, 250);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 200px;
 }
 
 .container,
 main {
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,12 +28,12 @@ main {
 }
 
 main {
-    padding: 2% 3.5%;
+    padding: 2% 3%;
 }
 
 .projects {
     width: auto fill; 
-    height: 280px;
+    height: 230px;
     border-bottom: 1px solid grey;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 a:link {
-    color: teal;
+    color: blue;
 }
 
 a:visited {
@@ -50,13 +50,12 @@ color: rgb(0, 184, 184);
 }
 
 a:hover {
-color: teal;
+color: yellowgreen;
 }
 
-/* selected link */
-/* a:active {
-color: yellow;
-} */
+hr {
+    background-color: black;
+}
 
 footer {
     max-width: 0 auto;
@@ -80,10 +79,18 @@ footer {
         max-width: 768px;
     }
 
+    main {
+        padding: 2% 3%;
+    }
+
     .projects {
         width: auto fill; 
-        height: 210px;
+        height: 180px;
         border-bottom: 1px solid grey;
+    }
+
+    .card-title {
+        font-size: 18px;
     }
 }
 
@@ -105,9 +112,42 @@ footer {
         font-size: 13px;
     }
 
+    .card-title {
+        font-size: 15px;
+    }
+
     .projects {
         width: auto fill; 
-        height: 200px;
+        height: 150px;
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .container,
+    main {
+        max-width: 570px;
+    }
+    
+    .card-deck {
+        width: 380px;
+    }
+
+    main {
+        padding-left: 15%;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .projects {
+        width: autofill; 
+        height: 300px;
         border-bottom: 1px solid grey;
     }
 }
