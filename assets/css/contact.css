@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(214, 242, 250);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 200px;
 }
@@ -37,7 +37,7 @@ main {
 
 main h2 {
     padding-bottom: 20px;
-    color: rgb(60, 181, 211);
+    color:black;
     font-size: 30px;
     font-weight: bold; 
     text-decoration: wavy; 
