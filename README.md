@@ -1,6 +1,6 @@
 # My Portfolio V2
 
-Link to my Web Page: <https://andrewyen64.github.io/My-Portfolio-V2/>
+Link to my Web Page: <https://andrewyen64.github.io/Updated-Portfolio/>
 
 ## Description
 
