@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(214, 242, 250);
+    background-color: rgb(0, 200, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 200px;
 }
@@ -18,11 +18,11 @@ body {
 }
 
 .name {
-    background-color: rgb(0, 184, 184);
-    padding: 30%;
+    background-color: black;
+    padding: 24%;
     border: double rgba(202, 202, 202, 0.351);
     color: white;
-    font-size: 28px;
+    font-size: 34px;
     font-weight: bolder;
 }
 
@@ -79,5 +79,21 @@ footer {
     }
     main {
         padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container,
+    main {
+        max-width: 375px;
+    }
+    
+    .name {
+        background-color: rgb(0, 200, 255);
+        padding: 5%;
+        /* border: double rgba(202, 202, 202, 0.536); */
+        color: white;
+        font-size: 34px;
+        font-weight: bolder;
     }
 }
