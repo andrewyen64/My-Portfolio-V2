@@ -24,7 +24,6 @@ body {
 .name {
     background-color: black;
     padding: 24%;
-    border: double rgba(202, 202, 202, 0.536);
     color: white;
     font-size: 34px;
     font-weight: bolder;
@@ -82,10 +81,15 @@ footer {
     margin-bottom: 0px;
 }
 
+/* iPad */
 @media screen and (max-width: 768px) {
     .container,
     main {
         max-width: 768px;
+    }
+
+    .name {
+        padding: 26%;
     }
 
     main {
@@ -94,7 +98,7 @@ footer {
 
     .projects {
         width: auto fill; 
-        height: 180px;
+        height: 300px;
         border-bottom: 1px solid grey;
     }
 
@@ -136,6 +140,49 @@ footer {
     }
 }
 
+/* iPhone 6/7/8 & Galaxy S5 */
+@media screen and (max-width: 415px) {
+    .container,
+    main {
+        max-width: 415px;
+    }
+    
+    .name {
+        background-color: rgb(0, 200, 255);
+        padding: 5%;
+        color: white;
+        font-size: 34px;
+        font-weight: bolder;
+    }
+    
+    .card-deck {
+        width: 380px;
+    }
+
+    .card {
+        max-width: 340px;
+    }
+
+    main {
+        padding-left: 9%;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .projects {
+        width: autofill; 
+        height: 300px;
+        border-bottom: 1px solid grey;
+    }
+}
+
+/* iPhone X */
 @media screen and (max-width: 375px) {
     .container,
     main {
@@ -145,22 +192,21 @@ footer {
     .name {
         background-color: rgb(0, 200, 255);
         padding: 5%;
-        /* border: double rgba(202, 202, 202, 0.536); */
         color: white;
         font-size: 34px;
         font-weight: bolder;
     }
     
+    main {
+        padding-left: 9%;
+    }
+
     .card-deck {
         width: 375px;
     }
 
     .card {
         max-width: 330px;
-    }
-
-    main {
-        padding-left: 9%;
     }
 
     .card-text {
