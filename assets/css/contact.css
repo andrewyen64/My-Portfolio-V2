@@ -87,7 +87,7 @@ footer {
 }
 
 /* iPhone 6/7/8 & Galaxy S5 */
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
     .container,
     main {
         max-width: 415px;
