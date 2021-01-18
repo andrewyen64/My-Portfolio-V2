@@ -1,103 +1,60 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(0, 200, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 200px;
-}
-
-.container {
-    max-width: 0 auto;
-    margin: 0 auto;
-}
-
-.header {
-    border-bottom: solid rgb(106, 106, 106);
-}
-
-/* .h-border {
-    border: solid 2px black;
-} */
-
-.name {
-    background-color: black;
-    padding: 24%;
-    color: white;
-    font-size: 34px;
-    font-weight: bolder;
-}
-
 main {
     padding: 2% 3%;
     max-width: 900px;
     margin: 0 auto;
 }
 
-h5 {
-    text-align: center;
+.projects {
+    width: stretch; 
+    height: 350px;
+    border-bottom: 2px solid grey;
 }
 
-.projects {
-    width: auto fill; 
-    height: 300px;
-    border-bottom: 1px solid grey;
+.card {
+    background-color: white;
+    border: 2px solid black;
 }
 
 .card-title {
     text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* a:link {
-    color: blue;
-} */
-
-a:visited {
-color: rgb(0, 184, 184);
-}
-
-a:hover {
-color: rgb(30, 37, 254);
+.techTitle {
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 hr {
     background-color: black;
 }
 
-footer {
-    max-width: 0 auto;
-    padding: 30px;
-    clear: both;
-    font-size: 14px;
+/* a {
+    border: 1px black solid;
+} */
+    
+a:hover {
+    color: bold;
+    text-shadow: 5px;
+}
+
+.space {
+    padding: 100px;
+}
+
+.btn {
     text-align: center;
-    background: #666;
-    border-top: 8px solid #4aaaa5;
-    color: white;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
 }
 
 /* iPad */
 @media screen and (max-width: 768px) {
-    .container,
     main {
+        padding: 2% 3%;
         max-width: 768px;
     }
 
-    .name {
-        padding: 26%;
-    }
-
-    main {
-        padding: 2% 3%;
-    }
-
     .projects {
-        width: auto fill; 
         height: 300px;
         border-bottom: 1px solid grey;
     }
@@ -108,17 +65,12 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-    .container,
-    main {
-        max-width: 640px;
-    }
-    
     .card-deck {
         width: 630px;
     }
 
     main {
-        padding-left: 4%;
+        max-width: 640px;
     }
 
     .card-text {
@@ -130,8 +82,7 @@ footer {
     }
 
     .projects {
-        width: auto fill; 
-        height: 150px;
+        height: 250px;
         border-bottom: 1px solid grey;
     }
 
@@ -141,42 +92,27 @@ footer {
 }
 
 /* iPhone 6/7/8 */
-@media screen and (max-width: 415px) {
-    .container,
-    main {
-        max-width: 415px;
-    }
-    
-    .name {
-        background-color: rgb(0, 200, 255);
-        padding: 5%;
-        color: white;
-        font-size: 34px;
-        font-weight: bolder;
-    }
-    
+@media screen and (max-width: 414px) {
     .card-deck {
-        width: 380px;
+        max-width: 340px;
     }
 
     .card {
         max-width: 340px;
     }
 
-    main {
-        padding-left: 9%;
+    .card-title {
+        font-size: 22px;
     }
 
     .card-text {
-        font-size: 13px;
-    }
-
-    .card-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .projects {
-        width: autofill; 
+        margin: 0 auto;
+        max-width: 336px;
+
         height: 300px;
         border-bottom: 1px solid grey;
     }
@@ -184,42 +120,22 @@ footer {
 
 /* iPhone X & Galaxy S5*/
 @media screen and (max-width: 375px) {
-    .container,
     main {
         max-width: 375px;
-    }
-    
-    .name {
-        background-color: rgb(0, 200, 255);
-        padding: 5%;
-        color: white;
-        font-size: 34px;
-        font-weight: bolder;
-    }
-    
-    main {
-        padding-left: 9%;
+        padding-left: 2%;
     }
 
     .card-deck {
-        width: 375px;
+        width: 310px;
     }
 
     .card {
-        max-width: 330px;
-    }
-
-    .card-text {
-        font-size: 13px;
-    }
-
-    .card-title {
-        font-size: 20px;
+        max-width: 310px;
     }
 
     .projects {
-        width: autofill; 
         height: 300px;
+        max-width: 307px;
         border-bottom: 1px solid grey;
     }
 }
