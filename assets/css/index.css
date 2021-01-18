@@ -27,13 +27,14 @@ main h2 {
     margin-right: 20px;
 }
 
-p {
+p,
+ul {
     max-width: 800px;
     font-size: 22px;
 }
 
 .space {
-    padding: 50px;
+    padding: 200px;
 }
 
 /* iPad */
@@ -72,7 +73,7 @@ p {
 }
 
 /* iPhone 6/7/8 & Galaxy S5 */
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
     .container,
     main {
         max-width: 415px;

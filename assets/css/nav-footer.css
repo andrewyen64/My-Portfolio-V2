@@ -22,6 +22,10 @@ body {
     font-weight: bold;
 }
 
+main {
+    margin-top: 7%;
+}
+
 footer {
     max-width: 0 auto;
     padding: 20px;
@@ -46,5 +50,13 @@ footer {
 
     .nav-link {
         border: black;
+    }
+
+    main {
+        margin-top: 40%;
+    }
+
+    .space {
+        padding: 500px;
     }
 }
